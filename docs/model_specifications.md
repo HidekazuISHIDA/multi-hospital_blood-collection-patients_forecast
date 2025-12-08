@@ -1,13 +1,19 @@
-# Model Specifications
+# モデル仕様書（日本語版）
 
-## Daily Forecast Model
-- Algorithm: XGBoost Regressor
-- Target: Daily blood collection patient volume
-- Features:
-  - Calendar features
-  - Outpatient counts
-  - Weather features
+## 日次予測モデル（Daily Forecast Model）
+- 使用アルゴリズム：XGBoost Regressor
+- 目的変数：1日あたりの採血患者数
+- 主な特徴量：
+  - 曜日、月、祝日フラグ
+  - 外来予約患者数
+  - 気象データ（気温・降水量）
+  - 過去日のラグ特徴量
 
-## Time-Slot Forecast Model
-- Target: 30-minute interval patient volume
-- Lag features included
+---
+
+## 時間帯別予測モデル（Time-Slot Forecast Model）
+- 対象：30分単位の採血患者数
+- 特徴量：
+  - 時刻・経過時間などの時間帯特徴量
+  - 過去の時間帯患者数のラグ特徴量
+  - 外来患者数・気象データ
