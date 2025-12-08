@@ -1,5 +1,7 @@
-# Citation
+# 論文引用形式（日本語版）
 
-If you use this repository, please cite:
+本リポジトリを研究で使用する場合は、以下の形式で引用してください：
 
-> Author et al. (2025). Multi-hospital blood collection forecasting model. Journal TBD.
+> 著者名（2025）．多施設採血患者数予測モデル：機械学習を用いた需要予測手法の開発．投稿予定．
+
+正式に掲載された論文情報は後日更新されます。
